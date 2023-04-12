@@ -1,0 +1,55 @@
+/*
+* Template Name : Brizzle | Responsive Bootstrap Landing Page Template
+* Version : 2.0.0
+* Created by : Themesdesign
+* File : Template default color
+*/
+
+.text-custom, .btn-outline-custom,
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:active,
+.navbar-custom .navbar-nav li.active a,
+.nav-sticky .btn-outline-white {
+    color: #87CEEB  !important;
+}
+
+.bg-custom,
+.play-icon-circle,
+.btn-custom,
+.social-icon > li a:hover,
+.btn-outline-custom:hover,
+.contact-border,
+.back-to-top:hover,
+.btn-outline-custom:hover, .btn-outline-custom:focus, 
+.btn-outline-custom:active, .btn-outline-custom.active, 
+.btn-outline-custom.focus, .btn-outline-custom:active, 
+.btn-outline-custom:focus, .btn-outline-custom:hover, 
+.open > .dropdown-toggle.btn-outline-custom {
+    background-color: #87CEEB;
+}
+
+.price-border-active,
+.btn-custom, .btn-outline-custom, .btn-outline-custom:hover,
+.registration-input-box:focus,
+.form-control:focus, .nav-sticky .btn-outline-white {
+    border-color: #87CEEB ;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+    border-color: #65b6d8;
+    background-color: #65b6d8;
+}
+
+.bg-gradiant-overlay {
+    background-image: linear-gradient(to left, #87CEEB 0%, #2575fc 100%);
+    background: -webkit-linear-gradient(to left, #87CEEB 0%, #2575fc 100%);
+    /*background: #2575fc;*/
+}

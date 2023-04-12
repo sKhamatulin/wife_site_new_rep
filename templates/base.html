@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock title %}</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="https://favicon.vspravke.com/ico/1/faviconka.ru_1_136537.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" type="text/css">
+
+    <!-- Magnificpopup Css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}" type="text/css">
+
+    <!-- materialdesign icons CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialdesignicons.min.css')}}" />
+
+    <!--Themify Icon -->
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/pe-icon-7-stroke.css')}}" />
+
+    <!--Slider-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css')}}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.css')}}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.transitions.css')}}"/>
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/colors/default.css')}}" />
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky">
+        <div class="container">
+
+
+            <!-- <a class="navbar-brand" href="#">Dealarc</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="mdi mdi-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">На верх</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feedback">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% block content %}
+{% endblock content %}
+    <!-- Footer start -->
+    <section class="section bg-footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="footer-content text-center">
+                        <div class="mt-4">
+                            <ul class="list-unstyled text-center footerlink">
+                                <li class="list-inline-item"><a href="#">На верх</a></li>
+                                <li class="list-inline-item"><a href="#services">Услуги</a></li>
+                                <li class="list-inline-item"><a href="#feedback">Отзывы</a></li>
+                                <li class="list-inline-item"><a href="#features">Блог</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-icon mt-4">
+                            <ul class="list-unstyled social-icon text-center">
+                                <li class="list-inline-item"><a href="https://instagram.com/butterflyy04?igshid=YmMyMTA2M2Y=" target="_blank"><i class="mdi mdi-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-telegram"></i></a></li>
+                                <li class="list-inline-item"><a href="https://vk.com/id42864444" target="_blank"><i class="mdi mdi-vk"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-alt bg-footer p-4 mt-5">
+                        <p class="copy-rights ">2023 direct by <a href="https://github.com/sKhamatulin" target="_blank">sKhamatulin</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer end -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a>
+
+    <!-- JAVASCRIPTS -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.easing.min.js"></script>
+    <!-- Scroolspy JS -->
+    <script src="static/js/scrollspy.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <!-- particles js  -->
+    <!--
+    <script src="static/js/particles.js"></script>
+    <script src="static/js/particles.app.js"></script>
+    -->
+    <!-- Custom JS -->
+    <script src="static/js/app.js"></script>
+
+</body>
+
+</html>

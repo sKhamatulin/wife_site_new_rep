@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Успешно</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" type="text/css">
+
+    <!-- Magnificpopup Css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}" type="text/css">
+
+    <!-- materialdesign icons CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialdesignicons.min.css')}}" />
+
+    <!--Themify Icon -->
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/pe-icon-7-stroke.css')}}" />
+
+    <!--Slider-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css')}}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.css')}}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.transitions.css')}}"/>
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/colors/default.css')}}" />
+
+</head>
+<section class="section" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center section-title mx-auto">
+                    <small class="pb-2 text-muted">Заявка успешно отправлена</small>
+                    <h3 class="mb-0">Спасибо!</h3>
+                    <br>
+                    <a href="{{ url_for('index') }}" class="btn btn-primary">На главную</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
