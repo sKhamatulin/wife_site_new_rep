@@ -15,6 +15,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = DATA_BASE_URL
 app.config['SECRET_KEY'] = SECRET_KEY
+app.config['ALLOWED_HOSTS'] = ['www.mariaevent.pythonanywhere.com',
+                               'mariaevent.pythonanywhere.com']
 db = SQLAlchemy(app)
 
 
