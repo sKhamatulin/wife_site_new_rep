@@ -9,10 +9,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 ADMIN_URL = os.getenv('ADMIN_URL')
+DATA_BASE_URL = os.getenv('DATA_BASE_URL')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
-app.config['SECRET_KEY'] = 'mysecretkey'
+app.config['SQLALCHEMY_DATABASE_URI'] = DATA_BASE_URL
+app.config['SECRET_KEY'] = SECRET_KEY
 db = SQLAlchemy(app)
 
 
