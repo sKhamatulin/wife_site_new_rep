@@ -8,6 +8,12 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Themesdesign" />
+    <script>
+        if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+          var bg = document.querySelector('.bg-cta');
+          bg.style.backgroundAttachment = 'scroll';
+        }
+    </script>
 
     <link rel="shortcut icon" href="https://favicon.vspravke.com/ico/1/faviconka.ru_1_136537.ico">
 
@@ -48,7 +54,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">На верх</a>
+                        <a class="nav-link" href="#home">Наверх</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Услуги</a>
@@ -76,7 +82,7 @@
                     <div class="footer-content text-center">
                         <div class="mt-4">
                             <ul class="list-unstyled text-center footerlink">
-                                <li class="list-inline-item"><a href="#">На верх</a></li>
+                                <li class="list-inline-item"><a href="#">Наверх</a></li>
                                 <li class="list-inline-item"><a href="#services">Услуги</a></li>
                                 <li class="list-inline-item"><a href="#feedback">Отзывы</a></li>
                                 <li class="list-inline-item"><a href="#features">Блог</a></li>
@@ -122,5 +128,5 @@
     <script src="static/js/app.js"></script>
 
 </body>
-
+<div id="iPad"></div>
 </html>
