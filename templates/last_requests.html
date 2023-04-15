@@ -45,6 +45,7 @@
                     <p>Клиент: {{ el.name }}</p>
                     <p>{{ el.text }}</p>
                     <p>Перезвонить: {{ el.phone }}</p>
+                    <a href="/{{ el.id}}/delete" class="btn btn-danger">Удалить</a>
                 </div>
             {% endfor %}
         </div>

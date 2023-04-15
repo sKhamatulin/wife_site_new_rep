@@ -75,5 +75,16 @@ def last_ten_requests():
     return render_template('last_requests.html', requests=requests)
 
 
+@app.route('/<int:id>/delete')
+def request_delete(id):
+    request = Request.query.get_or_404(id)
+    try:
+        db.session.delete(request)
+        db.session.commit()
+        return redirect(ADMIN_URL)
+    except Exception:
+        return 'При удалении заявки произошла ошибка'
+
+
 if __name__ == '__main__':
     app.run(debug=True)
